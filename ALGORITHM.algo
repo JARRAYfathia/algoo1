@@ -1,0 +1,20 @@
+ALGORITHM Counting
+VAR
+      str: string;
+      ch: char:=" ";
+      nb_word: Integer :=1;
+      nb_char: Integer;
+      nb_vow: Integer;
+      i: Integer:=0;
+BEGIN
+    str=str.toUpperCase();
+    WHILE (ch<>".") DO
+        nb_char=nb_char+1;
+    END_WHILE
+    IF (ch==" ") THEN
+         nb_word=nb_word+1;
+    END_IF
+    IF (ch in[A,E,Y,I,U,O]) THEN
+        nb_vow=nb_vow+1;
+    END_IF
+END
